@@ -1,0 +1,18 @@
+{% extends 'accounts/base.html' %}
+
+<!-- {% load crispy_forms_tags %} -->
+{% block content %}
+
+<div class="col-3 my-auto mx-auto">
+    <form action="" method="post" novalidate>
+    {% comment %} {% csrf_token %} {% endcomment %}
+        {% crispy form %}
+        {% comment %} {% csrf_token %}
+        <input type="text" name="username" id="">
+        <input type="password" name="password" id="">
+        {% endcomment %}
+        {% comment %} <input type="submit" value="Login"> {% endcomment %}
+    </form>
+</div>
+{% endblock content %}
+    

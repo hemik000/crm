@@ -1,0 +1,16 @@
+{% extends 'accounts/base.html' %}
+
+
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+<div class="col-5 mx-auto">
+<form action="" method="post" novalidate>
+    {% csrf_token %}
+    {% crispy form %}
+</form>
+</div>
+    
+{% endblock content %}
+    

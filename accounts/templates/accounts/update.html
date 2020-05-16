@@ -1,0 +1,26 @@
+{%  extends 'accounts/main.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class='col-5 mx-auto mt-5'>
+    <form method="POST" novalidate>
+        {% crispy form %}
+
+    <!-- <div class="form-group">
+        <label for="id_porduct">{{ form.product.label }}</label>
+        {{ form.product }}
+    </div>
+    <div class="form-group">
+        <label for="id_status">{{ form.status.label }}</label>
+        {{ form.status }}
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect2">{{ form.customer.label }}</label>
+        {{ form.customer }}
+    </div>
+    <div class="form-group">
+        {% csrf_token %}
+        <input type="submit" value="Submit" class="form-control btn-outline-primary">
+    </div> -->
+    </form>
+</div>
+{% endblock content %}
